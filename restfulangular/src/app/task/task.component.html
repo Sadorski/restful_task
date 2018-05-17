@@ -1,0 +1,5 @@
+<div>
+  <br>
+  <p *ngFor="let task of penguins; let i = index">Title: {{task.title}} - Description: {{task.description}}<br>
+  Completed: {{task.completed}}<button class="btn btn-primary" (click)="updateTask(task)">Edit</button><button class="btn btn-danger" (click)="deleteTask(task)">Delete</button></p>
+</div>
